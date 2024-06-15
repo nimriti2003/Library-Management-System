@@ -67,12 +67,12 @@ Upon running the application, you'll be presented with a menu of options:
 
 ## Project Structure
 Library-Management-System/
-│
-├── books.json
-├── main.py
-├── book.py
-├── user.py
-├── models.py
-├── check.py
-├── storage.py
-└── README.md
+- │
+- ├── books.json
+- ├── main.py
+- ├── book.py
+- ├── user.py
+- ├── models.py
+- ├── check.py
+- ├── storage.py
+- └── README.md

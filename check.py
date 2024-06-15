@@ -4,7 +4,7 @@ class CheckManager:
     def __init__(self, storage):
         self.storage = storage
         self.loans = self.storage.load_loans()
-
+        
     def checkout_book(self, user, book):
         if not book.available:
             raise Exception("Book is already checked out.")

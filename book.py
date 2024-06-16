@@ -1,18 +1,27 @@
 class Book:
-    def __init__(self, title, author, isbn, available=True):
+    def __init__(self, title, author, isbn, copies):
         self.title = title
         self.author = author
         self.isbn = isbn
-        self.available = available
+        self.copies = copies  
 
-    def __repr__(self):
-        return f"Book({self.title}, {self.author}, {self.isbn}, {self.available})"
+    def __str__(self):
+        return f"{self.title} by {self.author} (ISBN: {self.isbn}), Copies: {self.copies}"
 
-    def checkout(self):
-        if self.available:
-            self.available = False
+    def to_dict(self):
+        return {
+            "title": self.title,
+            "author": self.author,
+            "isbn": self.isbn,
+            "copies": self.copies
+        }
+
+    def check_out(self):
+        if self.copies > 0:
+            self.copies -= 1
+            return True
         else:
-            raise Exception("Book already checked out")
+            return False
 
     def check_in(self):
-        self.available = True
+        self.copies += 1

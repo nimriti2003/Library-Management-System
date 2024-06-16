@@ -1,24 +1,41 @@
+import json
 from datetime import datetime
 
 class CheckManager:
-    def __init__(self, storage):
+    def __init__(self, storage, book_manager, user_manager):
         self.storage = storage
-        self.loans = self.storage.load_loans()
-        
-    def checkout_book(self, user, book):
-        if not book.available:
-            raise Exception("Book is already checked out.")
-        book.checkout()
-        self.loans.append({
-            'user_id': user.user_id,
-            'isbn': book.isbn,
-            'checkout_date': str(datetime.now())
-        })
-        self.storage.save_loans(self.loans)
-        print(f"Book {book.title} checked out by {user.name}.")
+        self.book_manager = book_manager
+        self.user_manager = user_manager
+        self.checkouts = self.storage.load_loans()
 
-    def check_in_book(self, user, book):
-        book.check_in()
-        self.loans = [loan for loan in self.loans if not (loan['user_id'] == user.user_id and loan['isbn'] == book.isbn)]
-        self.storage.save_loans(self.loans)
-        print(f"Book {book.title} checked in by {user.name}.")
+    def check_out_book(self, user_id, isbn):
+        book = self.book_manager.find_books_by_isbn(isbn)
+        user = self.user_manager.find_user_by_id(user_id)
+
+        if book and user:
+            book = book[0]
+            if book.check_out():
+                checkout_time = datetime.now().isoformat()
+                self.checkouts.append({"user_id": user_id, "isbn": isbn, "checkout_time": checkout_time})
+                self.book_manager.storage.save_books(self.book_manager.books)
+                self.storage.save_loans(self.checkouts)
+                return True
+        return False
+
+    def check_in_book(self, user_id, isbn):
+        book = self.book_manager.find_books_by_isbn(isbn)
+        user = self.user_manager.find_user_by_id(user_id)
+
+        if book and user:
+            book = book[0]
+            for checkout in self.checkouts:
+                if checkout["user_id"] == user_id and checkout["isbn"] == isbn:
+                    book.check_in()
+                    self.checkouts.remove(checkout)
+                    self.book_manager.storage.save_books(self.book_manager.books)
+                    self.storage.save_loans(self.checkouts)
+                    return True
+        return False
+
+    def list_checkouts(self):
+        return self.checkouts

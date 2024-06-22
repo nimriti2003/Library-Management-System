@@ -107,4 +107,4 @@ class UserManager:
                 self.users.remove(user)
                 self.storage.save_users(self.users)
                 return True
-        return False 
+        return False

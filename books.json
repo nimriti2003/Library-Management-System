@@ -1,158 +1,122 @@
 [
     {
-        "title": "The Great Gatsby",
-        "author": "F. Scott Fitzgerald",
-        "isbn": "9780743273565",
-        "available": true
-    },
-    {
-        "title": "1984",
-        "author": "George Orwell", 
-        "isbn": "9780451524935",
-        "available": true
-    },
-    {
-        "title": "To Kill a Mockingbird",
-        "author": "Harper Lee",
-        "isbn": "9780060935467",
-        "available": true
+        "title": "War and Peace",
+        "author": "Leo Tolstoy",
+        "isbn": "9780140447934",
+        "copies": 2
     },
     {
         "title": "Pride and Prejudice",
         "author": "Jane Austen",
         "isbn": "9780141040349",
-        "available": true
+        "copies": 2
     },
     {
-        "title": "The Catcher in the Rye",
-        "author": "J.D. Salinger",
-        "isbn": "9780316769488",
-        "available": true
+        "title": "1984",
+        "author": "George Orwell",
+        "isbn": "9780451524935",
+        "copies": 4
+    },
+    {
+        "title": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "isbn": "9780743273565",
+        "copies": 3
     },
     {
         "title": "Moby Dick",
         "author": "Herman Melville",
         "isbn": "9781503280786",
-        "available": true
+        "copies": 2
     },
     {
-        "title": "War and Peace",
-        "author": "Leo Tolstoy",
-        "isbn": "9781420954318",
-        "available": true
+        "title": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "isbn": "9780060935467",
+        "copies": 6
+    },
+    {
+        "title": "The Catcher in the Rye",
+        "author": "J.D. Salinger",
+        "isbn": "9780316769488",
+        "copies": 4
     },
     {
         "title": "Crime and Punishment",
         "author": "Fyodor Dostoevsky",
-        "isbn": "9780486454115",
-        "available": true
-    },
-    {
-        "title": "The Hobbit",
-        "author": "J.R.R. Tolkien",
-        "isbn": "9780345339683",
-        "available": true
-    },
-    {
-        "title": "Brave New World",
-        "author": "Aldous Huxley",
-        "isbn": "9780060850524",
-        "available": true
-    },
-    {
-        "title": "The Odyssey",
-        "author": "Homer",
-        "isbn": "9780140268867",
-        "available": true
-    },
-    {
-        "title": "The Divine Comedy",
-        "author": "Dante Alighieri",
-        "isbn": "9780140448955",
-        "available": true
+        "isbn": "9780140449136",
+        "copies": 3
     },
     {
         "title": "The Brothers Karamazov",
         "author": "Fyodor Dostoevsky",
         "isbn": "9780374528379",
-        "available": true
+        "copies": 2
     },
     {
-        "title": "Meditations",
-        "author": "Marcus Aurelius",
-        "isbn": "9781503280465",
-        "available": true
+        "title": "Brave New World",
+        "author": "Aldous Huxley",
+        "isbn": "9780060850524",
+        "copies": 3
+    },
+    {
+        "title": "Jane Eyre",
+        "author": "Charlotte Bronte",
+        "isbn": "9780142437209",
+        "copies": 2
+    },
+    {
+        "title": "Wuthering Heights",
+        "author": "Emily Bronte",
+        "isbn": "9780141439556",
+        "copies": 4
+    },
+    {
+        "title": "The Odyssey",
+        "author": "Homer",
+        "isbn": "9780140268867",
+        "copies": 3
     },
     {
         "title": "The Iliad",
         "author": "Homer",
         "isbn": "9780140275360",
-        "available": true
+        "copies": 2
+    },
+    {
+        "title": "The Divine Comedy",
+        "author": "Dante Alighieri",
+        "isbn": "9780142437223",
+        "copies": 5
+    },
+    {
+        "title": "Les Miserables",
+        "author": "Victor Hugo",
+        "isbn": "9780451419436",
+        "copies": 3
+    },
+    {
+        "title": "The Hobbit",
+        "author": "J.R.R. Tolkien",
+        "isbn": "9780547928227",
+        "copies": 5
     },
     {
         "title": "Don Quixote",
         "author": "Miguel de Cervantes",
-        "isbn": "9780060934347",
-        "available": true
+        "isbn": "9780060934346",
+        "copies": 2
     },
     {
-        "title": "Les Misérables",
-        "author": "Victor Hugo",
-        "isbn": "9780451419439",
-        "available": true
+        "title": "Ulysses",
+        "author": "James Joyce",
+        "isbn": "9780679722762",
+        "copies": 2
     },
     {
-        "title": "The Picture of Dorian Gray",
-        "author": "Oscar Wilde",
-        "isbn": "9780141442464",
-        "available": true
-    },
-    {
-        "title": "A Tale of Two Cities",
-        "author": "Charles Dickens",
-        "isbn": "9780486406510",
-        "available": true
-    },
-    {
-        "title": "Jane Eyre",
-        "author": "Charlotte Brontë",
-        "isbn": "9780141441146",
-        "available": true
-    },
-    {
-        "title": "Wuthering Heights",
-        "author": "Emily Brontë",
-        "isbn": "9780141439556",
-        "available": true
-    },
-    {
-        "title": "Frankenstein",
-        "author": "Mary Shelley",
-        "isbn": "9780486282114",
-        "available": true
-    },
-    {
-        "title": "The Scarlet Letter",
-        "author": "Nathaniel Hawthorne",
-        "isbn": "9780486280486",
-        "available": true
-    },
-    {
-        "title": "Dracula",
-        "author": "Bram Stoker",
-        "isbn": "9780486411095",
-        "available": true
-    },
-    {
-        "title": "The Count of Monte Cristo",
-        "author": "Alexandre Dumas",
-        "isbn": "9780140449266",
-        "available": true
-    },
-    {
-        "title": "Moby-Dick",
-        "author": "Herman Melville",
-        "isbn": "9781503280786",
-        "available": true
+        "title": "The Lord of the Rings",
+        "author": "J.R.R. Tolkien",
+        "isbn": "9780544003415",
+        "copies": 4
     }
 ]
